@@ -12,6 +12,46 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
-    
-</body>
+        <div class="container">
+          <div class="jumbotron text-center">
+            <h1 class="display-4"><i class="far fa-address-card"></i>  Giftastic</h1>
+          </div>
+      
+          <!--Search Parameters-->
+          <div class="card">
+            <h5 class="card-header">Search Parameters</h5>
+            <div class="card-body">
+      
+      
+              <form>
+                <div class="form-group">
+                  <label>Search Term:</label>
+                  <input type="searchTerm" class="form-control" id="searchTerm" required>
+                </div>
+      
+                <button type="search" id="searchBtn" class="btn btn-primary"><i class="fas fa-search"></i>  Search</button>
+                <button type="clear" id="clearBtn" class="btn btn-primary"><i class="far fa-trash-alt"></i> Clear Results</button>
+              </form>
+      
+            </div>
+          </div>
+      
+          <br>
+          <br>
+          <!--Top Articles -->
+          <div class="card">
+            <h5 class="card-header">Top Gifs</h5>
+            <div class="card-body">
+      
+              <div id="searchedArt"></div>
+      
+            </div>
+          </div>
+          <br>
+          <br>
+      
+          <script src = "assets/javascript/app.js"></script>
+      
+        </div>
+      </body>
 </html>
