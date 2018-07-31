@@ -10,7 +10,6 @@ $(document).ready(function () {
               
     }); 
     function displayGifs(){
-        var show = $(this).attr("data-name");
         var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
         gif + "&api_key=9gRukuG1HPRSVI0E9uYkfj586taDoLDY";
             // creates ajax call
@@ -30,11 +29,7 @@ $(document).ready(function () {
                         showGif.attr('data-state', 'still');
                         showGif.addClass('gif');
                         showGif.attr('data-animate', results[i].images.fixed_height.url);
-                    // var rating = results[i].rating;
-                    // var p = $('<p>').text('Rating: ' + rating);
                     gifDiv.append(showGif)
-                    // gifDiv.append(p)
-    
                     $("#gifs").prepend(gifDiv);
                 }
                 
